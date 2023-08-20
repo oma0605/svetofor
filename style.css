@@ -1,0 +1,127 @@
+body {
+  background: black;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+}
+
+line {
+  background: white;
+}
+.block {
+  width: 300px;
+  height: 500px;
+  background: gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.red {
+  width: 150px;
+  height: 150px;
+  background: red;
+  border-radius: 50%;
+  background: black;
+  animation: red 10s linear;
+}
+
+.yellow {
+  width: 150px;
+  height: 150px;
+  background: rgb(231, 217, 20);
+  border-radius: 50%;
+  background: black;
+  animation: yellow 5s ease normal 10s;
+}
+
+.green {
+  width: 150px;
+  height: 150px;
+  background: rgb(21, 255, 0);
+  border-radius: 50%;
+  background: black;
+  animation: green 10s ease normal 15s;
+}
+
+@keyframes red {
+  0% {
+    background: black;
+  }
+
+  1% {
+    background: red;
+  }
+
+  100% {
+    background: red;
+  }
+}
+@keyframes yellow {
+  0% {
+    background: black;
+  }
+
+  1% {
+    background: rgb(247, 231, 15);
+  }
+
+  10% {
+    background: black;
+  }
+  20% {
+    background: yellow;
+  }
+  30% {
+    background: black;
+  }
+
+  40% {
+    background: rgb(247, 231, 15);
+  }
+
+  50% {
+    background: black;
+  }
+  60% {
+    background: yellow;
+  }
+  70% {
+    background: rgb(240, 218, 22);
+  }
+  80% {
+    background: black;
+  }
+  90% {
+    background: yellow;
+  }
+  100% {
+    background: rgb(240, 218, 22);
+  }
+}
+@keyframes green {
+  0% {
+    background: black;
+  }
+
+  1% {
+    background: green;
+  }
+  20% {
+    background: green;
+  }
+  60% {
+    background: green;
+  }
+  70% {
+    background: green (240, 218, 22);
+  }
+
+  100% {
+    background: green;
+  }
+}
